@@ -47,6 +47,18 @@ public class CacheConfiguration {
             createCache(cm, com.jhipster.demo.domain.User.class.getName());
             createCache(cm, com.jhipster.demo.domain.Authority.class.getName());
             createCache(cm, com.jhipster.demo.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.jhipster.demo.domain.Region.class.getName());
+            createCache(cm, com.jhipster.demo.domain.Country.class.getName());
+            createCache(cm, com.jhipster.demo.domain.Location.class.getName());
+            createCache(cm, com.jhipster.demo.domain.Department.class.getName());
+            createCache(cm, com.jhipster.demo.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.jhipster.demo.domain.Task.class.getName());
+            createCache(cm, com.jhipster.demo.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.jhipster.demo.domain.Employee.class.getName());
+            createCache(cm, com.jhipster.demo.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.jhipster.demo.domain.Job.class.getName());
+            createCache(cm, com.jhipster.demo.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.jhipster.demo.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
